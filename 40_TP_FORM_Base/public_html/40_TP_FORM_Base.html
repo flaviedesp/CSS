@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>40_TP_FORM_Base</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="formulaire.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <h1>Exemples de formulaires</h3>
+        <h4>Balise input</h4>
+        <p>Champ de saisie avec intput type text...</p>
+        <form action="#">
+            <input type="text" name="url" size="40" maxlength="40" value="http://">
+        </form>
+
+        <h4>Cases &agrave; cocher</h4>
+        <form action="#">
+            <input type="checkbox" id="case1" name="case1" value="case1"><label for="case1">case 1</label><br>
+            <input type="checkbox" id="case2" name="case2" value="case2" checked="checked"><label for="case2">case 2 pr&eacute;-coch&eacute;</label><br>
+            <input type="checkbox" id="case3" name="case3" value="case3"><label for="case3">case 3</label ><br>
+        </form>
+
+        <p>Boutons radio</p>
+        <form action="#">
+            <input type="radio" id="sale" name="saveur" value="salé"><label for="sale">sal&eacute;</label>
+            <input type="radio" id="sucre" name="saveur" value="sucré"><label for="sucre">sucr&eacute;</label>
+            <input type="radio" id="ssaveur" name="saveur" value="sans saveur" checked="checked"><label for="ssaveur">sans saveur</label>
+        </form>
+
+        <p>Envoyer un fichier</p>
+        <form action="#">
+            <input type="file" name="fichier">                   
+        </form>
+
+        <p>Champ de saisie de mot de passe</p>
+        <form action="#">
+            <input type="password" name="mdp" maxlength="25">
+        </form>
+
+        <p>Soumettre un formulaire...</p>
+        <form action="#">
+            <input type="submit" name="submit" value="Envoyer">
+        </form>
+
+        <p>... ou le remettre a zero</p>
+        <form action="#">
+            <input type="text" value="Petit texte...">
+            <input type="reset" name="reset" value="Mettre à zéro">
+        </form>
+
+        <h4>Champ de saisie long</h4>
+        <form action="#">
+            <textarea name="saisilong" cols="37" rows="5">C'est l'histoire d'un fou qui repeint sont plafond.
+        Un autre fou arrive et lui dit : "Accroche-toi au pinceau, j'enlève l'échelle!"</textarea>
+        </form>
+
+        <h4>Balise select</h4>
+        <p>Format par default</p>
+        <form action="#">
+            <select name="fromage" size="4" multiple="multiple">
+                <option value="Beaufort">Beaufort</option>
+                <option value="Saint Nectaire">Saint Nectaire</option>
+                <option value="Camenbert">Camenbert</option>
+                <option value="Reblochon">Reblochon</option>
+                <option value="Brie">Brie</option>
+            </select>
+        </form>
+
+        <p>on raffine un peu...</p>
+        <form action="#"> 
+            <select name="fromage" size="3" multiple="multiple">
+                <option value="Beaufort">Beaufort</option>
+                <option value="Saint Nectaire">Saint Nectaire</option>
+                <option value="Camenbert">Camenbert</option>
+                <option value="Reblochon">Reblochon</option>
+                <option value="Brie">Brie</option>
+            </select>
+        </form>
+
+        <h4>Un exemple combinant plusieurs types de champs</h4>
+        <form action="?subject=essai" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Vous identifier :</legend>
+            <p><label>Votre adresse de courrier &eacute;lectronique...<br></label>
+            <input type="email" name="mail" size="30" value="nom@fournisseur.domaine"></p>
+            <label>Tapez ici votre commentaire :<br></label>
+            <textarea name="commentaire" cols="45" rows="5">Votre commentaire...</textarea>
+        </fieldset>
+        </form>
+
+</body>
+</html>

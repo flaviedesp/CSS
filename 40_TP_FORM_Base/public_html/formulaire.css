@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 juil. 2018, 15:53:59
+    Author     : afpa1797
+*/
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+fieldset textarea, fieldset input{
+    background-color: pink;
+}

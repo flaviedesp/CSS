@@ -1,0 +1,84 @@
+
+.produit{
+    background-color: bisque;
+}
+.reference{
+    background-color: graytext;
+}
+.general{
+    background-color: aqua;
+    }
+#fin{
+    color:blue;
+    font-size: small;  
+    background-color: #C0C0C0;
+}
+div#premierePartie h3{
+    color: red;
+}
+#premierePartie blockquote p:first-letter{
+    color:green;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 200%;
+}
+tr td:nth-child(4n+1):first-letter{
+    text-transform: capitalize;
+}
+tr td:nth-child(4n+2){
+    background-color: red;
+    width: 10em;
+    text-align: center;    
+}
+tr td:nth-child(4n+3){
+    width: 30%; 
+    text-align: right;   
+}
+tr td:nth-child(4n+4){
+    text-align: center;
+}
+head, body{
+    font-family:Verdana, Arial, sans-serif;
+    background-color: #F3EAEA;
+}
+h1,h3,h2{
+    font-family:Arial, sans-serif;
+}
+blockquote p{
+    font-family:fantasy;
+    text-indent: 1em;
+}
+th{
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+div#premierePartie{
+    background-image: url(Images/logoafpa.jpg);
+    background-position: right bottom;
+    background-repeat: repeat-y; 
+}
+table, td, th{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+}
+table{
+    width: 60%;
+}
+#pborder{
+    padding: 1ex;
+    border-width: thick;
+    border-style: ridge;
+    border-color: green;   
+}
+div#fin p:first-child{
+    float: right;
+}
+ol li ul{
+    list-style-type: circle;
+}
+ol li ol{
+    list-style-type: lower-latin;
+}
+

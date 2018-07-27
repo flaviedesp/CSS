@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 juil. 2018, 09:15:07
+    Author     : afpa1797
+*/
+caption{
+    font-weight: bold;
+    text-align: left;
+    color: #300;
+    font-size: 110%;
+    width: 100%;
+}
+thead tr th, thead tr td{
+    text-align: left;
+    font-weight: bold;
+    background-color: #999;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-bottom: .2em;
+    padding-top: .2em;
+}
+tbody tr th{
+    text-align: left;
+    font-weight: bold;
+    background-color: #ddd;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-bottom: .2em;
+    padding-top: .2em;
+}
+tbody td{
+    text-align: center;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-bottom: .2em;
+    padding-top: .2em;  
+}
+tbody td:after{
+    content: " €";
+}
+/*table, th, tr, td{*/
+tbody *, thead *{
+    border-color: purple;
+    border-style: ridge;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+body h1{
+    text-align: center;
+}

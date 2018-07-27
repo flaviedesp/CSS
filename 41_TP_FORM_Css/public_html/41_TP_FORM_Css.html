@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>un beau formulaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="formulaire41.css" rel="stylesheet" type="text/css"/>
+        <script src="formulaire.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <h1>Renseignements vous concernant</h1>
+        <h4>(les champs précédés d'une * sont obligatoires)</h4>
+        <div id="corps">
+            <form action="#" method="post" enctype="multipart/form-data" onsubmit="testInterne(event)">
+            <fieldset>
+                <legend>Votre identit&eacute;</legend>                
+                    <div>
+                        <div id="identite">
+                            <label>Votre photo d'identit&eacute;:</label>
+                            <input type="file" name="photoidentite">
+                        </div>
+                        <label class="label1">Votre nom:*</label>
+                        <input id="nom" type="text" placeholder='Nom' name="nom" size="25" maxlength="50">
+                        <p>
+                            <label class="label1">Votre pr&eacute;nom:*</label>
+                            <input id="prenom" type="text" placeholder='Prénom' name="prenom" size="25" maxlength="50">
+                        </p> 
+                        <p>                        
+                            <label class="label1">Votre adresse:</label>
+                            <textarea name="adresse" cols="30" rows="4"></textarea>
+                        </p>
+                        <div class="label2">
+                            <label >Votre ville*:</label>
+                            <input id="ville" placeholder='Ville' type="text" name="ville" size="40" maxlength="50">
+                        </div>
+                        <p><label class="label1" >Code postal*:</label>
+                            <input id="cp" type="text" placeholder='00000' name="codepostal">
+                        </p>
+                        <div class="label2">
+                            <label >Votre mail:*</label>
+                            <input id="mail" type="email" name="mail" placeholder='pseudo@domaine.fr' size="50" maxlength="50">
+                        </div>
+                        <p>
+                            <label class="label1" >Votre t&eacute;l&eacute;phone:*</label>
+                            <input id="telephone" type="text" placeholder="00 00 00 00 00" name="telephone" size="20" maxlength="50">
+                        </p>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Vos connaissances g&eacute;rales</legend>
+                <div id="general"> 
+                    <p>
+                        <label>Lisez vous une ou plusieurs revues informatiques?</label>
+                        <input type="radio" name="revues" value="oui"><label>oui</label>
+                        <input type="radio" name="revues" value="non" checked="checked"><label>non</label>
+                        <label >  Si oui lesquelles</label>
+                        <textarea id="lesquelles" name="lesquelles" cols="30" rows="4"></textarea>
+                    </p>
+                    <p>Consultez vous un ou plusieur sites informatiques?
+                        <input type="radio" name="sites" value="oui"><label>oui</label>
+                        <input type="radio" name="sites" value="non" checked="checked"><label>non</label>
+                        <label >  Si oui lesquels</label>
+                        <textarea id="lesquels" name="lesquels" cols="30" rows="4"></textarea>
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Vos int&eacute;r&ecirc;ts</legend>
+
+                <p>Vous vous interessez :<br><br>
+                    <input type="checkbox" name="web" value="web"><label>&agrave; la programmation web</label><br><br>
+                    <input type="checkbox" name="informatique" value="informatique"><label>&agrave; la programmation informatique</label><br><br>
+                    <input type="checkbox" name="jeux" value="jeux"><label>aux jeux vid&eacute;os</label>
+                </p>
+            </fieldset>
+            <br>
+            <input type="submit" value="Soumettre">
+            <input type="reset" value="Réinitialiser">
+            </form>
+        </div>    
+    </body>
+</html>
